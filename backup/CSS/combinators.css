@@ -1,0 +1,20 @@
+div p {
+    background-color: yellow;
+}
+
+li {
+    list-style-type: square;
+}
+
+div>ul {
+    list-style-type: circle;
+    background-color: green;
+}
+
+div+span {
+    background-color: blueviolet;
+}
+
+p~span {
+    font-size: 35px;
+}

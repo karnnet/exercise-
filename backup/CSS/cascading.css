@@ -1,0 +1,25 @@
+p {
+    color: green;
+}
+
+p {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+
+/*least priority*/
+
+span {
+    color: red;
+}
+
+
+/*highhest priority*/
+
+#test span {
+    color: green;
+}

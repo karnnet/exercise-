@@ -1,0 +1,11 @@
+p {
+    background-color: green !important;
+}
+
+.para {
+    background-color: red;
+}
+
+#para {
+    background-color: pink
+}

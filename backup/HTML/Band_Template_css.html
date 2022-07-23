@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Qualminds</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- header-section -->
+        <div class="header">
+            <div class="topnav" id="myTopnav">
+                <a href="#home">HOME</a>
+                <a href="#band">BAND</a>
+                <a href="#tour">TOUR</a>
+                <a href="#contact">CONTACT</a>
+                <div class="dropdown">
+                    <button class="dropbtn">MORE 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                    <div class="dropdown-content">
+                        <a href="#">Merchandise</a>
+                        <a href="#">Extras</a>
+                        <a href="#">Media</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="sidebarOpen()"><i class="fa fa-bars"></i></a>
+                <a href="javascript:void(0)" class="search" onclick="sidebarClose()"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="nav-sidebar" id="sidebar" style="display:none">
+            <a href="javascript:void(0)" onclick="sidebarClose()" class="sidebar-close">Close  <i class="fa fa-close"></i></a>
+            <a href="#home" onclick="sidebarClose()">HOME</a>
+            <a href="#band" onclick="sidebarClose()">BAND</a>
+            <a href="#tour" onclick="sidebarClose()">TOUR</a>
+            <a href="#contact" onclick="sidebarClose()">CONTACT</a>
+            <a href="#" onclick="sidebarClose()">MORE 
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <a href="#" onclick="sidebarClose()">Merchandise</a>
+            <a href="#" onclick="sidebarClose()">Extras</a>
+            <a href="#" onclick="sidebarClose()">Media</a>
+        </div>
+    </div>
+    <!-- carousel-section -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/la.jpg" alt="Los Angeles">
+                <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/chicago.jpg" alt="Chicago">
+                <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/ny.jpg" alt="New York">
+                <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- band-section -->
+    <div class="band" id="band">
+        <div class="band-content">
+            <h2>THE BAND</h2>
+            <p class="band-first"><i>We love music</i></p>
+            <div class="band-second">
+                <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="band-row">
+                    <div class="band-member">
+                        <div class="col-s-4">
+                            <p>Name</p>
+                            <img src="images/bandmember.jpg">
+                        </div>
+                        <div class="col-s-4">
+                            <p>Name</p>
+                            <img src="images/bandmember.jpg">
+                        </div>
+                        <div class="col-s-4">
+                            <p>Name</p>
+                            <img src="images/bandmember.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tour-section -->
+    <div class="tour" id="tour">
+        <div class="tour-detail">
+            <h2>TOUR DATES</h2>
+            <p class="tour-first"><i>Remember to book your tickets!</i></p>
+            <ul>
+                <li>September<span class="tour-sold">Sold out</span></li>
+                <li>October<span class="tour-sold">Sold out</span></li>
+                <li>November<span class="badge badge-right">3</span></li>
+            </ul>
+            <div class="tour-row">
+                <div class="col-s-4 tour-margin-bottom"><img src="images/newyork.jpg" alt="New York" class="tour-img">
+                    <div class="tour-row-detail">
+                        <p>New York</p>
+                        <p>Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button btn-tour" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col-s-4 tour-margin-bottom"><img src="images/paris.jpg" alt="paris" class="tour-img">
+                    <div class="tour-row-detail">
+                        <p>Paris</p>
+                        <p>Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button btn-tour" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col-s-4 tour-margin-bottom"><img src="images/sanfran.jpg" alt="San Francisco" class="tour-img">
+                    <div class="tour-row-detail">
+                        <p>San Francisco</p>
+                        <p>Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button btn-tour" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="ticketModal" class="modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <!-- <form class="modal-content animate" action="/action_page.php" method="post"> -->
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('ticketModal').style.display='none'" class="close" title="Close Modal">x</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+            </div>
+
+            <div class="container-ticket">
+                <label><i class="fa fa-shopping-cart"></i>Tickets, $15 per person</label>
+                <input type="text" placeholder="How many ?" required>
+
+                <label></label><i class="fa fa-user"></i> Send To</label>
+                <input type="email" placeholder="Enter email" name="Send To" required>
+
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit">Pay<i class="fa fa-check"></i></button>
+            </div>
+            <div class="container-ticket" style="background-color:#f1f1f1">
+                <button id="button" onclick="document.getElementById('ticketModal').style.display='none'" class="cancelbtn">Close <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- contact-section -->
+    <div class="contact" id="contact">
+        <h2>CONTACT</h2>
+        <p class="band-first"><i>Fan? Drop a note!</i></p>
+        <div class="contact-row">
+            <div class="contact-details">
+                <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+            </div>
+            <div class="contact-form col-s-6">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="btn-contact" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <img src="images/map.jpg">
+    </div>
+    <div class="footer">
+        <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-snapchat"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Powered by <a class="link-company" href="https://www.qualminds.com" target="_blank">Qualminds</a></p>
+    </div>
+    </div>
+    <script>
+        var sidebar = document.getElementById('sidebar');
+
+        function sidebarClose() {
+            sidebar.style.display = "none";
+        }
+
+        function sidebarOpen() {
+            if (sidebar.style.display == "none") {
+                sidebar.style.display = "block";
+            } else {
+                sidebar.style.display = "none";
+            }
+        }
+        var modal = document.getElementById('ticketModal');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

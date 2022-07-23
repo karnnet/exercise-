@@ -1,0 +1,11 @@
+p {
+    color: red;
+}
+
+.full p {
+    color: green;
+}
+
+.full p {
+    color: revert
+}

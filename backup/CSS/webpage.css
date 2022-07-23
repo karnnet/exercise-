@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 30px;
+    width: 33.13%;
+    display: inline-block;
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: -2px;
+}
+
+nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+aside {
+    background-color: lightgray;
+    width: 20%;
+    font-size: 25px;
+}
+
+img {
+    float: left;
+    margin: 4px;
+}
+
+h2 {
+    display: inline-block;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 0;
+}

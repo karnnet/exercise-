@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z]{5}"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label>Select language:</label>
+        <input type="radio" name="Program_language" value="html" id="html" required>
+        <label for="html">HTML</label>
+
+        <input type="radio" name="Program_language" value="css" id="css" required>
+        <label for="css">CSS</label>
+
+        <input type="radio" name="Program_language" value="javscript" id="javascript" required>
+        <label for="javascript">JS</label><br><br>
+        <label>Select Vehicle:</label>
+        <input type="checkbox" value="Bike" name="vehicle1" id="Car1">
+        <label for="Car1">I have a bike</label>
+
+        <input type="checkbox" value="Car" name="vehicle2" id="Car2">
+        <label for="Car2">I have a Car</label>
+
+        <input type="checkbox" value="E-Car" name="vehicle3" id="Car3">
+        <label for="Car3">I have an ElectricCar</label>
+        <br><br>
+        <label for="Country">Select Country:</label>
+        <select name="Country" multiple size="3">Country Name
+            <option selected>Select</option>
+            <option>India</option>
+            <option>US</option>
+            <option >UK</option>
+        </select><br><br>
+        <label for="address">Address:</label> <textarea id="address" name="address" rows="5" cols="30"></textarea><br><br>
+        <label>Select option from Datalist:</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Mozilla">
+            <option value="Safari">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="IE">
+        </datalist><br><br>
+        <label for="color">Select your favourite color:</label>
+        <input type="color" id="color" name="color" value="#ff0000"><br><br>
+        <label for="birthday">Select DOB:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <label for="file">Select File:</label>
+        <input type="file" name="file" id="file" multiple accept=".pdf,image/*"><br><br>
+        <label for="number">Select Number:</label>
+        <input type="number" id="number" name="number" min="0" max="9"><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+
+</html>

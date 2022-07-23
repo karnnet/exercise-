@@ -1,0 +1,24 @@
+li {
+    background-color: green;
+}
+
+.specific {
+    background-color: yellow;
+}
+
+#secondlist {
+    background-color: pink
+}
+
+
+/* @media screen {
+    li {
+        margin-left: 3px
+    }
+}
+
+@media print {
+    li {
+        margin-left: 1px
+    }
+} */

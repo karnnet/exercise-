@@ -1,0 +1,29 @@
+h1 {
+    color: #0000ff;
+    border: 1px solid currentColor
+}
+
+h2 {
+    color: rgb(163, 139, 139, 0.9)
+}
+
+p {
+    color: hsl(10, 50%, 50%);
+    width: 300pt
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    font-size: 30px;
+}
+
+.container h1 {
+    font-size: 1em;
+}
+
+.container h2 {
+    font-size: 1rem;
+}

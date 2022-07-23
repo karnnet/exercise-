@@ -1,0 +1,115 @@
+ /*universal selector*/
+ 
+ * {
+     color: green;
+     text-align: center;
+ }
+ /*type selector- select with element name*/
+ 
+ h1 {
+     color: #BB7B20;
+ }
+ 
+ p {
+     font-size: 19px;
+ }
+ /* Id selector*/
+ 
+ #p-second {
+     color: rebeccapurple;
+ }
+ /*class selector*/
+ 
+ .three {
+     color: #9B0C83
+ }
+ /* if two element have same class name then by element name.classname , we can define css for that particular clement*/
+ 
+ p.three {
+     color: rgb(12, 98, 155)
+ }
+ 
+ h3.three {
+     color: black
+ }
+ /*atrtibute selector*/
+ 
+ a[target] {
+     color: black;
+ }
+ 
+ a[target=_blank] {
+     color: #74C574
+ }
+ 
+ a[title~=disney] {
+     font-size: 20px;
+ }
+ 
+ [class|=top],
+ [class$="test"] {
+     background-color: yellow
+ }
+ 
+ [class^=head] {
+     background-color: #546854;
+     color: white
+ }
+ /* [class$="test"] {
+     background: yellow;
+ } */
+ 
+ [class*="ond"] {
+     background: #1C6425;
+ }
+ /* unvisited link */
+ 
+ a:link {
+     color: red;
+ }
+ /* visited link */
+ 
+ a:visited {
+     color: green;
+ }
+ /* mouse over link */
+ 
+ a:hover {
+     color: hotpink;
+ }
+ /* selected link */
+ 
+ a:active {
+     color: blue;
+ }
+ 
+ a.highlight:hover {
+     font-size: 28px;
+ }
+ 
+ div.second {
+     background-color: green;
+     color: white;
+ }
+ 
+ div.second:hover {
+     background-color: blue;
+     padding: 25px;
+ }
+ 
+ p::first-letter {
+     font-size: 34px;
+ }
+ 
+ h1::after {
+     content: "-----<suffix>";
+ }
+ 
+ h1::before {
+     content: "<prefix>-------"
+ }
+ 
+ ul li::marker {
+     color: red;
+     font-size: 23px;
+ }
